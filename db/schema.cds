@@ -1,6 +1,5 @@
 namespace com.madhu.studentdb;
 using { managed, cuid } from '@sap/cds/common';
-
 @assert.unique:{
     studentid:[studentid]
 }
@@ -29,7 +28,6 @@ entity Student: cuid, managed {
       @title: 'Is Alumni'
     is_alumni: Boolean default false;
 }
-
 @cds.persistence.skip
 entity Gender {
     @title: 'code'
@@ -37,8 +35,6 @@ entity Gender {
     @title: 'Description'
     description: String(10);
 }
-
-
 entity Courses : cuid, managed {
     @title: 'Code'
     code: String(3);
@@ -48,9 +44,7 @@ entity Courses : cuid, managed {
         key ID: UUID;
        book :Association to Books;
     }
-
 }
-
 entity Books : cuid,managed{
     @title:'Code'
     code:String(3);
