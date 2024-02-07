@@ -236,7 +236,6 @@ annotate StudentDB.Student with @(
                 $Type: 'UI.DataField',
                 Value: book_ID
             }
-            
         ],
     },
     UI.Facets : [
